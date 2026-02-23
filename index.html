@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Like Jennie</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class = "header">Welcome to Jennie World</div>
+    <div class = "image-box">
+    <img src = "https://variety.com/wp-content/uploads/2024/09/Final-Jennie-Partnership-Announce-Photo-PC_-Songyi-Yoon-e1725833165699.png?w=985&h=657&crop=1" alt = "Jennie Image">
+    </div>
+    <div class="about">
+        <h1>About Jennie Kim</h1>
+            <blockquote cite="https://en.wikipedia.org/wiki/Jennie_(singer)">
+            Jennie Kim known mononymously as Jennie is a South Korean singer, rapper and global fashion icon best known as a member of the world-renowned K-pop girl group BLACKPINK.
+            Born on January 16, 1996 in South Korea. Jennie spent several years studying in New Zealand before returning to Korea to pursue a career in music.
+            She joined YG Entertainment as a trainee in 2010 and trained for nearly six years before debuting with BLACKPINK in August 2016.
+            As the group’s main rapper and lead vocalist, Jennie quickly gained attention for her charismatic stage presence, distinctive voice and versatile performance style. In 2018,
+            she became the first member of the group to debut as a solo artist with the single “SOLO,” which was both a commercial and critical success, topping charts and highlighting 
+            her individuality as an artist. Beyond music, Jennie is widely recognized for her influence in the fashion industry. Often referred to as the “Human Chanel,” she serves as a 
+            global ambassador for several luxury brands and is frequently seen at international fashion weeks. Her style—both elegant and edgy—has inspired millions of fans worldwide.
+            Jennie’s impact extends far beyond the stage. With her talent, confidence, and trendsetting presence, she continues to shape global pop culture and remains one of the most 
+            influential figures in the entertainment industry today.</blockquote>
+    </div>
+    <div class = "quote">" In the dark, I grew "</div>
+
+    <div class="music-section">Jennie's Top Musics</div>
+    <div class="playlist-container">
+        <div class="now-playing">
+            <div class="album-art-wrap">
+                <img id = "mainAlbum" class="album-art" src="" alt="Album Art">
+                <div class="album-center-dot" ></div>
+            </div>
+            <div class="track-info">
+                <p class="track-name" id="mainTitle">SOLO</p>
+                <p class="track-artist" id="mainArtist">Jennie . 2018</p>
+                <div class="progress-wrap">
+                    <span class="time-label" id="currentTime">0:00</span>
+                    <div class="progress-bar-bg" id="progressBg">
+                        <div class="progress-bar-fill" id="progressFill"></div>
+                    </div>
+                    <span class= "time-label" id="totalTime">3.00</span>
+                </div>
+            </div>
+        </div>
+         <div class="controls">
+            <button class="ctrl-btn" id="rewindBtn" title="Previous" aria-label="Previous">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M6 6h2v12H6V6zm3.5 6l8.5 6V6l-8.5 6z"/>
+                </svg>
+            </button>
+            <button class="ctrl-btn play-pause" id="playPauseBtn" title="Play/Pause" aria-label="Play">
+                <svg id="playIcon" width="26" height="26" viewBox="0 0 24 24" fill="white">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+                <svg id="pauseIcon" width="26" height="26" viewBox="0 0 24 24" fill="white" style="display:none">
+                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                </svg>
+            </button>
+            <button class="ctrl-btn" id="forwardBtn" title="Next" aria-label="Next">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M6 18l8.5-6L6 6v12zm2.5-6L6 18V6l2.5 0zm7-6h-2v12h2V6z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Playlist -->
+        <ul class="playlist-list" id="playlistList"></ul>
+    </div>
+    <audio id="audioPlayer"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
