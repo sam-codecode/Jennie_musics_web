@@ -298,7 +298,7 @@ width: 3px;
 .playlist-item.active .playing-indicator.paused span {
     animation-play-state: paused;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 
     /* Hide about section entirely */
     .about {
@@ -363,3 +363,4 @@ width: 3px;
         font-size: 20px;
     }
 }
+
