@@ -11,42 +11,42 @@ const tracks = [
         artist: "Jennie · 2023",
         duration: "2:58",
         cover: "https://www.billboard.com/wp-content/uploads/2023/10/Jennie-cr-YG-Entertainment-press-2023-billboard-1548.jpg",
-        src: "/songs/JENNIE (BLACKPINK) - You & Me (Coachella Ver.).mp3"
+        src: "songs/JENNIE (BLACKPINK) - You & Me (Coachella Ver.).mp3"
     },
     {
         title: "Mantra",
         artist: "Jennie · 2024",
         duration: "2:17",
         cover: "https://cdn.k-ennews.com/news/photo/202410/4384_11971_4641.jpg",
-        src: "/songs/JENNIE - Mantra (Official Lyric Video) - JennieRubyJaneVEVO.mp3"
+        src: "songs/JENNIE - Mantra (Official Lyric Video) - JennieRubyJaneVEVO.mp3"
     },
     {
         title: "Like Jennie",
         artist: "Jennie · 2025",
         duration: "2:04",
         cover: "https://sm.mashable.com/t/mashable_me/photo/default/untitled-2025-04-09t183338787_qmzb.1248.jpg",
-        src: "/songs/like JENNIE.mp3"
+        src: "songs/like JENNIE.mp3"
     },
     {
         title: "ExtraL",
         artist: "Jennie · 2025",
         duration: "2:48",
         cover: "https://linkstorage.linkfire.com/medialinks/images/32a4c344-1377-41f1-b66f-2e27e611b4f4/artwork-440x440.jpg",
-        src: "/songs/JENNIE & Doechii - ExtraL (Official Lyric Video).mp3"
+        src: "songs/JENNIE & Doechii - ExtraL (Official Lyric Video).mp3"
     },
         {
         title: "ZEN",
         artist: "Jennie · 2025",
         duration: "3:22",
         cover: "https://i0.wp.com/kstationtv.com/wp-content/uploads/2025/01/JENNIE-3.jpg?fit=647%2C366&ssl=1",
-        src: "/songs/JENNIE - ZEN (Official Lyric Video).mp3"
+        src: "songs/JENNIE - ZEN (Official Lyric Video).mp3"
     },
             {
         title: "Like Jennie (MMA)",
         artist: "Jennie · 2025",
         duration: "3:04",
         cover: "https://wimg.heraldcorp.com/news/cms/2025/12/22/news-p.v1.20251222.511ed2bc20f74c96a260befb3d9a6637_P1.jpg",
-        src: "/songs/jennie - like jennie (mma ver.) - extended remix.mp3"
+        src: "songs/jennie - like jennie (mma ver.) - extended remix.mp3"
     }
 ];
 let currentIndex = 0;
@@ -174,5 +174,6 @@ tracks.forEach((t, i) => {
     });
     playlistList.appendChild(li);
 });
+
 
 loadTrack(0);
