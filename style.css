@@ -298,3 +298,68 @@ width: 3px;
 .playlist-item.active .playing-indicator.paused span {
     animation-play-state: paused;
 }
+@media (max-width: 400px) {
+
+    /* Hide about section entirely */
+    .about {
+        display: none;
+    }
+
+    /* Header — smaller font */
+    .header {
+        font-size: 22px;
+        padding: 14px 10px;
+    }
+
+    /* Photo — full width, centered, reset negative margins */
+    .image-box {
+        width: calc(100% - 32px);
+        height: 200px;
+        margin: 16px auto;
+        display: block;
+        border-radius: 24px;
+    }
+    .image-box img {
+        border-radius: 20px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    /* Quote — reset negative margin from desktop layout */
+    .quote {
+        font-size: 20px;
+        margin-top: 12px;
+        margin-left: 0;
+        text-align: center;
+        padding: 0 16px;
+    }
+
+    /* Music section title */
+    .music-section {
+        font-size: 20px;
+        margin-top: 20px;
+        padding: 14px;
+    }
+
+    /* Playlist container */
+    .playlist-container {
+        margin: 16px 10px 40px;
+        padding: 20px 14px;
+        border-radius: 20px;
+    }
+
+    /* Now playing — smaller album art */
+    .album-art-wrap {
+        width: 80px;
+        height: 80px;
+    }
+    .album-art {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Track name smaller */
+    .track-name {
+        font-size: 20px;
+    }
+}
